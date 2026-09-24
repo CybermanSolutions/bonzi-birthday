@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { background:#6a00a8; text-align:center; color:white; }
+    #bonzi { width:300px; margin-top:50px; }
+  </style>
+</head>
+<body>
+  <h1>Happy 65th Birthday from an old friend!</h1>
+  <img id="bonzi" src="wave_000.png">
+  <script>
+    const frames = ["wave_000.png","wave_001.png","wave_002.png","wave_003.png","wave_004.png","wave_005.png","wave_006.png","wave_007.png","wave_008.png","wave_009.png","wave_010.png","wave_011.png","wave_012.png","wave_013.png","wave_0014.png"];
+    let i = 0;
+    setInterval(() => {
+      document.getElementById("bonzi").src = frames[i];
+      i = (i + 1) % frames.length;
+    }, 150);
+  </script>
+  <script src="bonzi.js"></script>
+</body>
+</html>
