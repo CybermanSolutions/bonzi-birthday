@@ -41,16 +41,18 @@
     let i = 0;
 
     function animateBonzi() {
+      if (i === 0) {
+        speakBonzi(); // Speak at the start of each loop
+      }
+
       document.getElementById("bonzi").src = frames[i];
       i++;
 
       if (i < frames.length) {
-        // Continue animation
         setTimeout(animateBonzi, 150);
       } else {
-        // End of loop → pause → restart
         i = 0;
-        setTimeout(animateBonzi, 800); // 800ms pause before next wave
+        setTimeout(animateBonzi, 800);
       }
     }
 
