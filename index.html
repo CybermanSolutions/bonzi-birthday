@@ -13,10 +13,26 @@
       width: 300px;
       margin-top: 50px;
     }
+    #message {
+      opacity: 0;
+      animation: fadeIn 2.5s ease forwards;
+      margin-top: 40px;
+      color: white;
+      font-size: 20px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
   </style>
 </head>
 <body>
-  <h1>Happy Birthday Dad!</h1>
+  <h1>Happy 65th Birthday Dad!</h1>
   <img id="bonzi" src="assets/bonzi/frames/idle_001.png">
 
   <script>
@@ -59,6 +75,14 @@
     animateBonzi();
 
   </script>
+  <div id="message">
+    <p>Dad, I built this little page because I wanted you to open something today and feel the same spark of joy you’ve always given me. You’ve been the steady center of my life — the person who taught me how to look at the world with curiosity instead of fear, with humor instead of heaviness. Every year I grow older, I understand more clearly how much of who I am comes from you.</p>
+
+    <p>You’ve always shown me that strength isn’t loud — it’s patient, it’s consistent, it’s the way you show up for the people you love without needing applause. When I work on my projects, when I chase big ideas, when I try to build things that matter, I’m really just following the example you set. You gave me the confidence to explore, to create, to imagine, and to believe that I could shape my own world.</p>
+
+    <p>So today, I wanted to give you something small but meaningful — a reminder that your impact reaches far beyond the moments you might think are ordinary. You’ve shaped my life in ways I’ll never stop appreciating. Happy Birthday, Dad. I love you more than I can ever fully express, and I’m grateful every day that I get to be your son.</p>
+  </div>
+
 </body>
 </html>
 
