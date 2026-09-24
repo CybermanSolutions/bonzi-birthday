@@ -39,10 +39,23 @@
     ];
 
     let i = 0;
-    setInterval(() => {
+
+    function animateBonzi() {
       document.getElementById("bonzi").src = frames[i];
-      i = (i + 1) % frames.length;
-    }, 150);
+      i++;
+
+      if (i < frames.length) {
+        // Continue animation
+        setTimeout(animateBonzi, 150);
+      } else {
+        // End of loop → pause → restart
+        i = 0;
+        setTimeout(animateBonzi, 800); // 800ms pause before next wave
+      }
+    }
+
+    animateBonzi();
+
   </script>
 </body>
 </html>
